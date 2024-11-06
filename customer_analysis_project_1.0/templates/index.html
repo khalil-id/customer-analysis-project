@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <title>Customer Churn Prediction</title>
+</head>
+<body>
+    <h1>Customer Churn Prediction</h1><br>
+    <div class="buttons">
+        <form action="/train" method="post">
+            <button type="submit" class="train">Train Model</button>
+        </form>
+        <a href="/predict" class="predict"><button>Make Prediction</button></a>
+    </div>
+    {% if message %}
+    <p class="message" >{{ message }}</p>
+    {% endif %}
+</body>
+</html>

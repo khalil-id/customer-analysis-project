@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/predict.css">
+    <title>Enter Customer Data</title>
+    <style>
+        body {
+            background-image: none !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Customer Data</h1>
+    <form action="/predict" method="post">
+        <div class="form-group">
+            <label for="customer_id">Customer ID:</label>
+            <input type="text" id="customer_id" name="customer_id" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="estimated_salary">Estimated Salary:</label>
+            <input type="number" id="estimated_salary" name="estimated_salary" step="0.01" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="credit_score">Credit Score:</label>
+            <input type="number" id="credit_score" name="credit_score" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="products_number">Number of Products:</label>
+            <input type="number" id="products_number" name="products_number" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="tenure">Tenure (years):</label>
+            <input type="number" id="tenure" name="tenure" step="0.1" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="credit_card">Has Credit Card:</label>
+            <select id="credit_card" name="credit_card" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <label for="active_member">Is Active Member:</label>
+            <select id="active_member" name="active_member" required>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <label for="balance">Account Balance:</label>
+            <input type="number" id="balance" name="balance" step="0.01" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option></option>
+                <option value="Spain">Spain</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+            </select>
+        </div>
+    
+        <button type="submit">Predict</button>
+    </form>
+    <a href="/" class="home"><button>Back to Home</button></a>
+    
+</body>
+</html>

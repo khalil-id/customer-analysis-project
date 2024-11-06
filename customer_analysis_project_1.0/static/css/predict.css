@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
+body{
+    background-color: #f4f4f4;
+}
+h1{
+    color: #039c06;
+    margin: 2rem 0;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 33%;
+}
+
+label {
+    font-weight: bold;
+    width: 180px;
+    margin-right: 10px;
+}
+
+input, select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #79c77a4d;
+    padding: 0 0 0 1rem;
+    border-radius: 0.4rem;
+}
+
+button {
+    padding: 10px;
+    background-color: hwb(122 37% 25%);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 31rem;
+}
+
+button:hover {
+    background-color: #3a963e;
+    color: white;
+}
+
+.home *{
+    width: 10rem;
+    margin-left: 33%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
